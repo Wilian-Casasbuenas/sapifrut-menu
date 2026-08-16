@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Salpifrut</title>
+    <style>
+        :root {
+            --primary-color: #023E2A; /* Verde oscuro elegante */
+            --accent-color: #D4AF37; /* Dorado */
+            --bg-color: #F9F9F9;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 5px solid var(--accent-color);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #E8F5E9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .menu-section {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 3px solid var(--primary-color);
+        }
+        .menu-section h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        .menu-item {
+            margin-bottom: 1.2rem;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 1rem;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .menu-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-desc {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0.4rem 0;
+            line-height: 1.4;
+        }
+        .menu-price {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            background: #E8F5E9;
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 0.3rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #222;
+            color: white;
+            font-size: 0.9rem;
+        }
+        .footer strong {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+   <header>
+        <!-- Cambia "logo.png" por el nombre exacto de la imagen de tu logo -->
+        <img src="logo.png" alt="Logo Salpifrut" style="max-width: 180px; margin-bottom: 10px; border-radius: 10px;">
+        <!-- Si tu logo ya tiene el nombre, puedes borrar la línea de abajo -->
+        <p>Frescura y sabor en cada bocado</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Línea Insignia -->
+        <div class="menu-section">
+            <h2>🍹 Salpiconos & Salpihelados</h2>
+            
+            <div class="menu-item">
+                <div class="menu-title">Origen Tradición</div>
+                <div class="menu-desc">Mosaico de frutas tropicales seleccionadas, agua mineral y receta del chef. 100% natural.</div>
+                <div class="menu-price">Med: $9.000 | Gde: $12.000 | Salpihelado Med: $12.000 | Salpihelado Gde: $14.000</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-title">Éxtasis Rubí</div>
+                <div class="menu-desc">Sinfonía de frutos rojos (fresas, moras, uvas, arándanos), agua mineral y helado.</div>
+                <div class="menu-price">Med: $12.000 | Gde: $15.000 | Salpihelado Med: $15.000 | Salpihelado Gde: $18.000</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-title">Sol de Girardot</div>
+                <div class="menu-desc">Collage de frutos amarillos (mango, maracuyá, piña oro miel) con toques exóticos.</div>
+                <div class="menu-price">Med: $12.000 | Gde: $15.000 | Salpihelado Med: $15.000 | Salpihelado Gde: $18.000</div>
+            </div>
+        </div>
+
+        <!-- Jardines de Fruta -->
+        <div class="menu-section">
+            <h2>🥗 Jardines de Fruta</h2>
+            <p style="font-size: 0.85rem; color: #666; font-style: italic; margin-top: -10px;">Bañadas con deliciosa salsa Hershey's</p>
+            
+            <div class="menu-item">
+                <div class="menu-title">Bocado Vital</div>
+                <div class="menu-desc">Frutas, queso, crema de leche, durazno, manzana, fresa, cereza, chantillí y galleta.</div>
+                <div class="menu-price">Pequeña: $12.000</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-title">Sinfonía Salpifrut</div>
+                <div class="menu-desc">Equilibrio de frutas, adición de kiwi, barquillo y una bola de helado.</div>
+                <div class="menu-price">Mediana: $15.000</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-title">Festín Real</div>
+                <div class="menu-desc">Experiencia monumental de abundancia con brevas y dos bolas de helado.</div>
+                <div class="menu-price">Grande: $18.000</div>
+            </div>
+        </div>
+
+        <!-- Néctares -->
+        <div class="menu-section">
+            <h2>🧃 Néctares Naturales</h2>
+            <p style="font-size: 0.85rem; color: #666; font-style: italic; margin-top: -10px;">En Agua: $8.000 | En Leche: $10.000</p>
+            
+            <div class="menu-item">
+                <div class="menu-title">Nieve Velvet <span style="font-size: 0.9rem; font-weight: normal; color: #555;">(Guanábana)</span></div>
+                <div class="menu-desc">Textura sedosa y cremosa.</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-title">Sol de Mango <span style="font-size: 0.9rem; font-weight: normal; color: #555;">(Mango Tropical)</span></div>
+                <div class="menu-desc">Dulzor 100% natural.</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-title">Esencia Rubí <span style="font-size: 0.9rem; font-weight: normal; color: #555;">(Fresa Silvestre)</span></div>
+                <div class="menu-desc">Balance óptimo entre acidez y dulzura.</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-title">Místico Tamarindo <span style="font-size: 0.9rem; font-weight: normal; color: #555;">(Exótico)</span></div>
+                <div class="menu-desc">Elixir agridulce helado.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p><strong>📍 Ubicación:</strong> Frente al C.C. Unicentro Girardot</p>
+        <p><strong>🏍️ Domicilios:</strong> 3223398541</p>
+        <p style="font-size: 0.75rem; color: #aaa;">Sin costo por compras superiores a $20.000. Valor regular: $5.000</p>
+    </div>
+
+</body>
+</html>
