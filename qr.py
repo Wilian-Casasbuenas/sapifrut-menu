@@ -1,6 +1,6 @@
 import qrcode
 
-url = "https://github.com/Wilian-Casasbuenas/sapifrut-menu.git"
+url = "https://Wilian-Casasbuenas.github.io/sapifrut-menu/"
 
 img = qrcode.make(url)
-img.save("logo.png")
+img.save("qr_salpifrut.png")
