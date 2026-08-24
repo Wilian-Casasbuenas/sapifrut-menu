@@ -56,7 +56,18 @@
             border-bottom: 2px solid var(--accent-color);
             padding-bottom: 0.5rem;
             margin-top: 0;
+            display: flex; /* Alinea perfectamente el icono con el texto */
+            align-items: center;
         }
+        
+        /* NUEVO ESTILO PARA LOS ICONOS DE LOS TÍTULOS */
+        .icon-title {
+            font-size: 2.5rem; /* Tamaño más grande */
+            margin-right: 12px; /* Separación del texto */
+            filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.25)); /* Sombra para resaltar */
+            transform: rotate(-5deg); /* Ligero giro para que se vea dinámico y llamativo */
+        }
+
         .menu-item {
             margin-bottom: 1.2rem;
             border-bottom: 1px dashed #eee;
@@ -106,17 +117,14 @@
 <body>
 
    <header>
-        <!-- Cambia "logo.png" por el nombre exacto de la imagen de tu logo -->
         <img src="logo.png" alt="Logo Salpifrut" style="max-width: 180px; margin-bottom: 10px; border-radius: 10px;">
-        <!-- Si tu logo ya tiene el nombre, puedes borrar la línea de abajo -->
         <p>La Receta Gourmet de la Frescura</p>
     </header>
 
     <div class="container">
         
-        <!-- Línea Insignia -->
         <div class="menu-section">
-            <h2>🍹 Salpihelados & Salpicones Gourmt</h2>
+            <h2><span class="icon-title">🍹</span> Salpihelados & Salpicones Gourmet</h2>
             
             <div class="menu-item">
                 <div class="menu-title">Origen Tradición</div>
@@ -136,36 +144,35 @@
                 <div class="menu-price">Med: $12.000 | Gde: $15.000 | Salpihelado Med: $15.000 | Salpihelado Gde: $18.000</div>
             </div>
         </div>
-         <!-- Canastas -->
-        <div class="menu-section">
-            <h2>🍹 Canastas de Helado Gourmet</h2>
+
+         <div class="menu-section">
+            <h2><span class="icon-title">🍨</span> Canastas de Helado Gourmet</h2>
             
             <div class="menu-item">
                 <div class="menu-title">Seducción Completa</div>
-                <div class="menu-desc">Crujiente canastilla artesanal con <b>una bola de helado</b>, crema chantillí y una galleta crujiente y Barquillo, Bañada con deliciosa salsa Hershey's</div>
+                <div class="menu-desc">Crujiente canastilla artesanal con <b>una bola de helado</b>, crema chantillí y una galleta crujiente y Barquillo, <b>Bañada con deliciosa salsa Hershey's</b> </div>
                 <div class="menu-price"> $6.500</div>
             </div>
 
             <div class="menu-item">
                 <div class="menu-title">Acacia Tropical</div>
-                <div class="menu-desc">Crujiente canastilla artesanal con <b>dos bolas de helado</b>, crema chantillí y una galleta crujiente y Barquillo, Baañado con deliciosa salsa Hershey's</div>
+                <div class="menu-desc">Crujiente canastilla artesanal con <b>dos bolas de helado</b>, crema chantillí y una galleta crujiente y Barquillo, <b>Bañadas con deliciosa salsa Hershey's</b> </div>
                 <div class="menu-price"> $9.500 </div>
             </div>
 
             <div class="menu-item">
                 <div class="menu-title">Experiencia Gourmet</div>
-                <div class="menu-desc">Crujiente canastilla artesanal con <b>tres bolas de helado</b>, crema chantillí y una galleta crujiente y Barquillo, Baañado con deliciosa salsa Hershey's.</div>
+                <div class="menu-desc">Crujiente canastilla artesanal con <b>tres bolas de helado</b>, crema chantillí y una galleta crujiente y Barquillo, <b>Bañadas con deliciosa salsa Hershey's</b> </div>
                 <div class="menu-price"> $12.500 </div>
             </div>
         </div>
 
-         <!-- Copas de helado -->
-        <div class="menu-section">
-            <h2>🍹 Copas de Helado Frutales Exóticos</h2>
+         <div class="menu-section">
+            <h2><span class="icon-title">🍧</span> Copas de Helado Frutales Exóticos</h2>
             
             <div class="menu-item">
                 <div class="menu-title">Armonia de Durazno</div>
-                <div class="menu-desc">Suaves y jugosos duraznos combinados con <b>2 cremosas bolas de helado</b>,crema chantillí, galleta crocante y un toque de deliciosa salsa de Hershey's</div>
+                <div class="menu-desc">Suaves y jugosos duraznos combinados con <b>2 cremosas bolas de helado</b>, crema chantillí, galleta crocante y un toque de deliciosa salsa de Hershey's</div>
                 <div class="menu-price"> $14.000</div>
             </div>
 
@@ -188,9 +195,8 @@
             </div>
         </div>
 
-        <!-- Jardines de Fruta -->
         <div class="menu-section">
-            <h2>🥗 Jardines de Fruta</h2>
+            <h2><span class="icon-title">🥗</span> Jardines de Fruta</h2>
             <p style="font-size: 0.85rem; color: #666; font-style: italic; margin-top: -10px;"><b>Bañadas con deliciosa salsa Hershey's</b></p>
             
             <div class="menu-item">
@@ -212,9 +218,8 @@
             </div>
         </div>
 
-        <!-- Néctares -->
         <div class="menu-section">
-            <h2>🧃 Néctares Naturales</h2>
+            <h2><span class="icon-title">🥤</span> Néctares Naturales</h2>
             <div class="menu-price"><p style="font-size: 0.85rem; margin-top: -1px; margin-bottom: -1px;">En Agua: $8.000 | En Leche: $10.000</p></div> 
             
             <div class="menu-item">
@@ -238,7 +243,7 @@
     </div>
 
     <div class="footer">
-        <p><strong>📍 Ubicación:</strong> Frente al C.C. Unicentro Girardot</p>
+        <p><strong>📍 Ubicación:</strong> Diagonal 8a # 33 - 97 Frente al C.C. Unicentro Girardot</p>
         <p><strong>🏍️ Domicilios:</strong> 3223398541</p>
         <p style="font-size: 0.75rem; color: #aaa;">Sin costo por compras superiores a $20.000. Valor regular: $5.000</p>
     </div>
